@@ -1,0 +1,18 @@
+name: "Tag Matches Version"
+description: "Check if the tag matches the version in a file"
+inputs:
+  file-path:
+    description: "The path to the file to read"
+    default: "deno.json"
+  key:
+    description: "The key to read from the file"
+    default: "version"
+  tag-prefix:
+    description: "The prefix to use for the tag"
+    default: "v"
+outputs:
+  matches:
+    description: "Whether the tag matches the version"
+runs:
+  using: "node20"
+  main: "dist/index.js"

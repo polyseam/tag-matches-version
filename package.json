@@ -1,0 +1,27 @@
+{
+  "name": "tag-matches-version",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js",
+    "local-action": "npx @github/local-action . index.js .env"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": { ".": "./dist/index.js" },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "jsonc-parser": "^3.3.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  }
+}
