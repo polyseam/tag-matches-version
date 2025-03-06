@@ -10,6 +10,9 @@ inputs:
   tag-prefix:
     description: "The prefix to use for the tag"
     default: "v"
+  fail-on-mismatch:
+    description: "Whether to fail if the tag does not match the version"
+    default: "true"
 outputs:
   matches:
     description: "Whether the tag matches the version"
