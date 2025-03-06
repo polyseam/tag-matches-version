@@ -30,8 +30,7 @@ function run() {
       "",
     );
 
-    // default true
-    const failOnMismatch = core.getInput("fail-on-mismatch");
+    const failOnMismatch = !(core.getInput("fail-on-mismatch") === "false");
 
     const data = parseData(pathToData);
 
