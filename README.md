@@ -52,7 +52,7 @@ and succeed.
 
 `version` by default
 
-The `key` is used to pull the version value from your manifest, whether your
+The `key` is used to pull the version value from your manifest. Whether your
 manifest is JSON, JSONC, or YAML, we will use this key to access the value.
 
 ### `fail-on-mismatch`
