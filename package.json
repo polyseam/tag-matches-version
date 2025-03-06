@@ -4,17 +4,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ncc build index.js",
-    "local-action": "npx @github/local-action . index.js .env"
+    "build": "ncc build index.js"
   },
   "engines": {
     "node": ">=20"
   },
-  "exports": { ".": "./dist/index.js" },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "keywords": [
+    "actions",
+    "github",
+    "tag",
+    "version"
+  ],
+  "author": {
+    "name": "Matt Johnston"
+  },
+  "license": "Apache-2.0",
+  "description": "GitHub Action which ensures git release tag versions align with their source code version",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
